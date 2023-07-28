@@ -34,11 +34,19 @@ header>nav>ul {
     gap: 20px;
     box-sizing: border-box;
 }
-
-header>nav>ul>li>a {
+header>nav>ul>li>a{
     text-decoration: none;
     color: #000;
-    gap: 20px;
+    gap: 20px; 
+}
+
+main>section>nav>ul>li>a, main>section>div>div>a {
+    text-decoration: none;
+    color: #000;
+    gap: 20px; 
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .folder {
@@ -56,7 +64,8 @@ header>nav>ul>li>a {
 }
 
 .img-post-2 {
-    background-image: url('./img/vertical.jpg');
+    /* background-image: url('./img/vertical.jpg'); */
+    background-image: url('https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,11 +94,10 @@ main>section>h2 {
 }
 
 .img-post-1-texto {
-    color: rgb(109, 126, 16);
-    justify-content: end;
-    flex-direction: column;
     display: flex;
+    align-items: end;
     padding: 20px;
+    gap: 10px;
     /* box-sizing: border-box; */
 }
 
@@ -138,16 +146,6 @@ main>section>nav>ul{
     display: flex;
     gap: 20px;
 }
-main>section>nav>ul>li>a{
-    text-decoration: none;
-    color: #000;
-    gap: 20px;
-    /* box-sizing: border-box; */
-    /* border: 1px solid #000; */
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #fff;
-}
 
 .submenu-foot {
     /* border: 1px solid; */
@@ -172,10 +170,10 @@ main>section>nav>ul>li>a{
 }
 
 .foot-img1 {
-    background-image: url('./img/against-timelogo.jpg');
+    background-image: url('./img/guns-n-roseslogo.jpg');
 }
 .foot-img2 {
-    background-image: url('./img/ironmaiden-logo.jpg');
+    background-image: url('./img/nirvanalogo.jpg');
 }
 .foot-img3 {
     background-image: url('./img/ramones-logo.jpg');
@@ -192,5 +190,4 @@ main > section > div > div > p {
     border-radius: 20px;
     margin-left: 10px;
     margin-top: 10px;
-
 }
