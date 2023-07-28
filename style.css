@@ -5,14 +5,36 @@
 
 body {
     font-family: Verdana;
-    margin: 10px;
+    margin: -3px 10px;
     background-color: #fdf1fa;
 }
 
 .container {
     margin: 0 auto;
+    max-width: 1000px;
+    min-width: 1000px;
+}
+
+body>div {
+    display: flex;
+    justify-content: space-between;
     max-width: 1024px;
-    min-width: 1024px;
+    gap: 0;
+    border: 1px solid;
+    padding: 5px;
+    background-color: rgb(56, 55, 55);
+    color: #fff;
+    margin: 0 auto;
+}
+
+body>div p:first-child {
+    margin-left: 200px;
+}
+
+body>div p:last-child {
+    margin-right: 35px;
+    border: 1px solid;
+    border-radius: 80%;
 }
 
 header {
@@ -24,8 +46,9 @@ header {
 }
 
 header>h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
+    margin-right: 100px;
 }
 
 header>nav>ul {
@@ -34,16 +57,18 @@ header>nav>ul {
     gap: 20px;
     box-sizing: border-box;
 }
-header>nav>ul>li>a{
+
+header>nav>ul>li>a {
     text-decoration: none;
     color: #000;
-    gap: 20px; 
+    gap: 20px;
 }
 
-main>section>nav>ul>li>a, main>section>div>div>a {
+main>section>nav>ul>li>a,
+main>section>div>div>a {
     text-decoration: none;
     color: #000;
-    gap: 20px; 
+    gap: 20px;
     border-radius: 20px;
     padding: 10px;
     background-color: #fff;
@@ -81,12 +106,12 @@ main>section>nav>ul>li>a, main>section>div>div>a {
     justify-content: space-around;
 }
 
-main > section > div > span > h2 {
+main>section>div>span>h2 {
     font-size: 2.3rem;
 }
 
 main>section>h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
 }
 
 .img {
@@ -99,6 +124,11 @@ main>section>h2 {
     padding: 20px;
     gap: 10px;
     /* box-sizing: border-box; */
+}
+
+.img-post-1-colum {
+    width: 480px;
+    color: #fff;
 }
 
 .post {
@@ -129,19 +159,23 @@ main>section>h2 {
 
 .submenu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     margin-bottom: 40px;
+    border: 1px solid;
 }
+
 .submenu-h2 {
     flex: 3;
 }
+
 .submenu-nav {
     flex: 4;
     justify-content: space-around;
+
 }
-main>section>nav>ul{
+
+main>section>nav>ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -159,6 +193,7 @@ main>section>nav>ul{
     width: calc(100% / 4);
     /* border: 1px solid; */
 }
+
 .foot-options {
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,17 +207,20 @@ main>section>nav>ul{
 .foot-img1 {
     background-image: url('./img/guns-n-roseslogo.jpg');
 }
+
 .foot-img2 {
-    background-image: url('./img/nirvanalogo.jpg');
+    background-image: url('./img/ratosdeporoeslogo.jpg');
 }
+
 .foot-img3 {
     background-image: url('./img/ramones-logo.jpg');
 }
+
 .foot-img4 {
     background-image: url('./img/slipknot-logo.jpg');
 }
 
-main > section > div > div > p {
+main>section>div>div>p {
     display: inline-block;
     background-color: #fff;
     padding: 10px;
