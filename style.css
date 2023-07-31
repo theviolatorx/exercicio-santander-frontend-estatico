@@ -241,3 +241,7 @@ main>section>div>div>p {
     margin: 10px 0 10px 0;
     padding: 0;
 }
+
+.nivel > p:last-child {
+    font-size: .45rem;
+}
